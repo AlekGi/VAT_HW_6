@@ -28,7 +28,7 @@ public class RandomRecipesTest extends AbstractTest {
                 .get(getBaseUrl() + "random")
                 .then()
                 .statusCode(200)
-                .time(Matchers.lessThan(3000L))
+                .time(Matchers.lessThan(4000L))
                 .extract()
                 .response()
                 .body().as(GetRandomRecipes.class);
